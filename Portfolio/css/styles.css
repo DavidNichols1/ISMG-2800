@@ -1,0 +1,80 @@
+/*
+David Nichols
+9/22/25
+Styles.css
+*/
+
+/* CSS Reset: nomralize */
+html, body, header, nav, main, article, footer, h1, h2, h3, p, ul, li, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* global*/
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#fff,#1d2b64);
+    font-family: Georgia, serif;
+    color: #fff;
+    text-align: center;
+}
+
+img{
+    /*image is too big*/
+    max-width: 25%;
+    display: block;
+    height: auto;
+}
+
+/*headers*/
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2,h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+/*nav*/
+nav ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f8cdda;
+}
+
+/*main*/
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* footer*/
+footer {
+    margin-top: auto;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #fff;
+}
