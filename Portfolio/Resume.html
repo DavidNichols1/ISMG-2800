@@ -1,0 +1,149 @@
+<!--
+    David Nichols
+    resume.html
+    8/31/25
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>David Nichols — Resume</title>
+  <style>
+    :root{
+      --ink:#0b1526;
+      --muted:#445d7a;
+      --accent:#2b78c6;
+      --bg:#ffffff;
+      --card:#f6f9fc;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{
+      font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--ink);
+      background:var(--bg);
+    }
+    .container{
+      max-width:900px;
+      margin:auto;
+      padding:32px 20px 56px;
+    }
+    header{
+      border-bottom:2px solid var(--accent);
+      padding-bottom:18px;
+      margin-bottom:28px;
+    }
+    h1{
+      margin:0 0 6px;
+      font-size:clamp(26px,4vw,36px);
+      letter-spacing:.3px;
+    }
+    .contact{
+      display:flex; gap:14px; flex-wrap:wrap;
+      color:var(--muted); font-size:15px;
+    }
+    .contact a{color:var(--muted); text-decoration:none}
+    .contact a:hover{color:var(--accent); text-decoration:underline}
+    h2{
+      margin:28px 0 10px;
+      font-size:20px;
+      color:var(--accent);
+      letter-spacing:.2px;
+    }
+    p{margin:0 0 10px}
+    .card{background:var(--card); border-radius:12px; padding:16px}
+    /* Skills grid */
+    .skills{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:8px 18px;
+      padding-left:0; list-style:none; margin:0;
+    }
+    @media (min-width:720px){ .skills{grid-template-columns:repeat(3,1fr)} }
+    /* Work history */
+    .job{margin:16px 0; padding:14px; border:1px solid #e7eef6; border-radius:12px; background:#fff}
+    .job h3{margin:0 0 4px; font-size:17px}
+    .job .meta{color:var(--muted); font-size:14px; margin-bottom:8px}
+    /* Links */
+    .links{padding-left:18px}
+    .links li{margin:6px 0}
+    /* Print tweaks */
+    @media print{
+      body{background:#fff}
+      .card,.job{border:1px solid #bbb; background:#fff}
+      a{color:inherit}
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <h1>David Nichols</h1>
+      <div class="contact" aria-label="Contact">
+        <span>Denver, Colorado 80210</span>
+        <span>•</span>
+        <a href="tel:+17202086756">720-208-6756</a>
+        <span>•</span>
+        <a href="mailto:DavidNathanielNichols@gmail.com">DavidNathanielNichols@gmail.com</a>
+      </div>
+    </header>
+
+    <section aria-labelledby="summary">
+      <h2 id="summary">Professional Summary</h2>
+      <div class="card">
+        <p>
+          Innovative and results-driven technology specialist with expertise in mobile app development, web technologies, and database solutions. Proficient in Swift, Flutter/Dart, JavaScript, and SQL, with hands-on experience launching and scaling cross-platform products, including published iOS apps and a Chrome extension. Strong background in entrepreneurship, personal investing, and project leadership, complemented by excellent communication skills. Adept at managing multiple priorities, solving complex problems, and delivering high-quality solutions in fast-paced environments.
+        </p>
+      </div>
+    </section>
+
+    <section aria-labelledby="skills">
+      <h2 id="skills">Skills</h2>
+      <ul class="skills card">
+        <li>SQL</li>
+        <li>Swift</li>
+        <li>JavaScript</li>
+        <li>HTML / CSS</li>
+        <li>Flutter / Dart</li>
+        <li>GitHub</li>
+        <li>Firebase</li>
+        <li>Systems Design</li>
+        <li>QuickBooks</li>
+        <li>Excel</li>
+        <li>Microsoft Office</li>
+        <li>Tableau</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="work">
+        <h2 id="work">Work History</h2>
+      
+        <article class="job" aria-labelledby="job1-title">
+          <h3 id="job1-title">Founder — VibeTemp LLC</h3>
+          <div class="meta">
+            Denver, CO • <time datetime="2025-04">Apr 2025</time> – Present
+          </div>
+          <ul class="links" aria-label="Highlights">
+            <li>Created Kettle (website, mobile app, Chrome extension).</li>
+            <li>Company site: <a href="https://kettleapp.ai/" target="_blank" rel="noopener">kettleapp.ai</a></li>
+          </ul>
+        </article>
+      
+        <article class="job" aria-labelledby="job2-title">
+          <h3 id="job2-title">Intern — Cognizant</h3>
+          <div class="meta">
+            Englewood, CO • <time datetime="2024-06">Jun 2024</time> – <time datetime="2024-08">Aug 2024</time>
+          </div>
+          <ul class="links" aria-label="Highlights">
+            <li>Standardized Excel spreadsheets</li>
+            <li>Worked with FACETS</li>
+            <li>Worked with NetworX</li>
+            <li>Corporate Presentations</li>
+            <li>Healthcare Certifications</li>
+          </ul>
+        </article>
+      </section>
+      
