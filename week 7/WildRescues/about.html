@@ -9,20 +9,26 @@
   <meta charset="utf-8">
   <title>About Us | Wild Rescues</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Phase 04: link to style sheet -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header>
-    <h1>&#128062; Wild Rescues</h1>
-    <h2>Rescue &middot; Rehabilitate &middot; Release</h2>
+    <!-- Phase 04: header should contain clickable hawk image -->
+    <a href="index.html">
+      <img src="images/baby-hawk.jpg" alt="rescued baby hawk">
+    </a>
   </header>
 
   <nav>
-    <a href="index.html">Home</a> &nbsp; &#183; &nbsp;
-    <a href="about.html">About Us</a> &nbsp; &#183; &nbsp;
-    <a href="partnership.html">Partnership</a> &nbsp; &#183; &nbsp;
-    <a href="gallery.html">Gallery</a> &nbsp; &#183; &nbsp;
-    <a href="faqs.html">FAQs</a> &nbsp; &#183; &nbsp;
-    <a href="contact.html">Contact</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="partnership.html">Partnership</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="faqs.html">FAQs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </nav>
 
   <main>
@@ -30,11 +36,12 @@
       <h2>About Us</h2>
       <p>Wild Rescues is a registered nonprofit wildlife rescue and rehabilitation facility in Ocala, Florida. We help injured, sick, neglected, and orphaned wildlife, rehabilitate them, and release them when possible.</p>
       <p>We are members of the
-        <a href="https://www.nwrawildlife.org/" target="_blank" rel="noopener">National Wildlife Rehabilitators Association</a>.
+        <a class="link" href="https://www.nwrawildlife.org/" target="_blank" rel="noopener">National Wildlife Rehabilitators Association</a>.
       </p>
 
       <br><br>
-      <img src="images/tortoise.jpg" alt="tortoise eating vegetation" height="300" width="400">
+      <!-- Phase 04: remove height/width attributes -->
+      <img src="images/tortoise.jpg" alt="tortoise eating vegetation">
 
       <br><br>
       <h3>We help many animals, such as:</h3>
@@ -50,7 +57,7 @@
       </ul>
 
       <br><br>
-      <p>Did you find an injured or orphaned animal? Contact us to see if we can help.</p>
+      <p class="action">Did you find an injured or orphaned animal? Contact us to see if we can help.</p>
     </div>
   </main>
 
