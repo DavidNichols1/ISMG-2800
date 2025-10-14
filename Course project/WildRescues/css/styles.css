@@ -5,10 +5,32 @@
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h3 {
+body, header, nav, main, footer, img, h1, h3, ul {
     margin: 0;
     padding: 0;
     border: 0;
+  }
+
+  /* mobile*/
+  .mobile {
+    display: block;
+  }
+
+  .mobile h1, .mobileh3 {
+    padding: 2%;
+    text-align: center;
+  }
+  
+  .mobile h1 {
+    font-family: 'Emlema One', cursive;
+  }
+
+  .mobile h3 {
+    font-family: 'Lora', serif;
+  }
+
+  .tab-desk {
+    display: none;
   }
   
   /* Style rules for body and images */
@@ -26,15 +48,16 @@ body, header, nav, main, footer, img, h1, h3 {
   }
   nav ul {
     list-style-type: none;
-    margin: 0;
     text-align: center;
   }
   nav li {
-    display: inline-block;
+    display: block;
+    border-top: 0.5px solid #f6eee4;
     font-size: 1.5em;
     font-family: Geneva, Arial, sans-serif;
     font-weight: bold;
   }
+
   nav li a {
     display: block;
     color: #f6eee4;
@@ -45,7 +68,7 @@ body, header, nav, main, footer, img, h1, h3 {
   /* Style rules for main content */
   main {
     padding: 2%;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: 'Lora', serif;
   }
   main p {
     font-size: 1.25em;
@@ -69,6 +92,15 @@ body, header, nav, main, footer, img, h1, h3 {
     font-weight: bold;
     text-align: center;
   }
+
+  .round {
+    border-radius: 6px;
+  }
+
+  #info ul {
+    margin-left: 10%;
+  }
+
   #contact {
     text-align: center;
   }
@@ -86,3 +118,21 @@ body, header, nav, main, footer, img, h1, h3 {
     text-decoration: none;
   }
   
+  .tel-link {
+    background-color: #2a1f14;
+    padding: 2%;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .tel-link a {
+    color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  #contact .email-Link {
+    color: #4d3319;
+    text-decoration: none;
+    font-weight: bold;
+  }
