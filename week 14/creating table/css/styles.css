@@ -1,0 +1,34 @@
+/*
+Author: David Nichols
+Date: 11/17/25
+File Name: styles.css
+*/
+
+body {
+    background-color: #ffe5dc;
+    font-family: sans-serif;
+}
+
+table {
+    width: 70%;
+    border: 4px solid #fd4d0c;
+    margin: 40px auto;
+    border-collapse: collapse;
+    box-shadow: 5px 5px 10px #792101;
+}
+
+caption {
+    font-size: 1.8em;
+    padding: 10px;
+    font-weight: bold;
+}
+
+th, td {
+    border: 2px solid #a22c02;
+    padding: 12px;
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fe9772;
+}
