@@ -1,0 +1,92 @@
+/*
+    David Nichols
+    styles.css
+    12/4/25
+*/
+
+/* CSS reset */
+body, header, main, section, footer, h1, h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*  body */
+body {
+    background-color: #f0d8d1;
+}
+
+/*  header */
+header {
+    padding: 3%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* main  */
+main {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1em;
+    margin: 0 2%;
+    padding: 1em;
+    background-color: #fff;
+    border: 5px double #33091b; 
+    padding: 2%;
+}
+
+h2 {
+    padding-bottom: 1%;
+}
+
+section {
+    margin-bottom: 3%;
+}
+
+button {
+    height: 3em;
+    font-size: 1em;
+}
+
+/* Animation */
+@keyframes moveSquare {
+    0% {
+        margin-left: 6%;
+        background-color: #33091b;
+    }
+    50% {
+        margin-left: 40%;
+        background-color: #80405a;
+    }
+    100% {
+        margin-left: 6%;
+        background-color: #33091b;
+    }
+}
+
+/* animated square */
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: #33091b;
+    margin-left: 6%;
+
+    -webkit-animation-name: moveSquare;
+    animation-name: moveSquare;
+
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}
+
+/* Hover effect  */
+.square:hover {
+    -webkit-transform: translate(80px);
+    transform: translate(80px);
+}
+
+/* footer */
+footer {
+    font-size: .90em;
+    text-align: center;
+    margin-top: 2em;
+}
